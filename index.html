@@ -3,7 +3,7 @@
 <head>
     <!-- META TAGS-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WasteNoMore</title>
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -56,9 +56,39 @@
                     <div class="txt-hld sinkin">
                         DO'S &#38; DONT'S
                     </div>
-                    <a data-toggle="collapse" href="#collapseReduce" aria-expanded="false" aria-controls="collapseReduce">
-                        <div class="chev-hld"></div>
+                    <a class="hidden-sm-down" data-toggle="collapse" href="#collapseReduce" aria-expanded="false" aria-controls="collapseReduce">
+                        <div class="chev-hld reduce"></div>
                     </a>
+                    <a class="hidden-md-up" data-toggle="collapse" href="#collapseReduceMobile" aria-expanded="false" aria-controls="collapseReduceMobile">
+                        <div class="chev-hld reduceMobile"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse collapse-box" id="collapseReduceMobile">
+                <div class="card card-block">
+                    <div class="sinkin collapse-title">
+                        The best way to manage waste is to not produce it.  Shopping carefully and being aware of a few guidelines can do this:
+                    </div>
+                    <ul class="lato">
+                        <li>Buy products in bulk. Larger, economy-size products or ones in concentrated form use less packaging and usually cost less per ounce.</li>
+                        <li>Avoid over-packaged goods, especially ones packed with several materials such as foil, paper, and plastic. They are difficult to recycle, plus you pay more for the package.</li>
+                        <li>Avoid disposable goods, such as paper plates, cups, napkins, razors, and lighters.</li>
+                        <li>Throwaways contribute to the problem, and cost more because they must be replaced again and again.</li>
+                        <li>Buy durable goods - ones that are well built or that carry good warranties. They will last longer, save money in the long run and save and fill space.</li>
+                        <li>At work, make two-sided copies when ever possible.</li>
+                        <li>Maintain central files rather than using several files for individuals.</li>
+                        <li>Use electronic mail or main bulletin board.</li>
+                        <li>Use cloth napkins instead of paper napkins.</li>
+                        <li>Use a dishcloth instead of paper towels.</li>
+                    </ul>
+                    <div class="text-right link-to-reuse sinkin">
+                        <a class="three-r-nav hidden-sm-down" title="reuse">
+                            REUSE <span class="right-arrow">&#62;</span>
+                        </a>
+                        <a class="three-r-nav hidden-md-up" title="reuseMobile">
+                            REUSE <span class="right-arrow">&#62;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
@@ -77,9 +107,33 @@
                     <div class="txt-hld sinkin">
                         WHAT CAN I DO?
                     </div>
-                    <div class="chev-hld">
-                        <!--<img src="img/chevron.png" alt="Chevron">-->
+                    <a class="hidden-sm-down" data-toggle="collapse" href="#collapseReuse" aria-expanded="false" aria-controls="collapseReuse">
+                        <div class="chev-hld reuse"></div>
+                    </a>
+                    <a class="hidden-md-up" data-toggle="collapse" href="#collapseReuseMobile" aria-expanded="false" aria-controls="collapseReuseMobile">
+                        <div class="chev-hld reuseMobile"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse collapse-box" id="collapseReuseMobile">
+                <div class="card card-block">
+                    <div class="sinkin collapse-title">
+                        It makes economic and environmental sense to reuse products. Sometimes it takes creativity:
                     </div>
+                    <ul class="lato">
+                        <li>Reuse products for the same purpose. Save paper and plastic bags, and repair broken appliances, furniture and toys.</li>
+                        <li>Reuse products in different ways. Use a coffee can to pack a lunch; use plastic microwave dinner trays as picnic dishes.</li>
+                        <li>Sell old clothes, appliances, toys, and furniture in garage sales or ads, or donate them to charities.</li>
+                        <li>Use resalable containers rather than plastic wrap.</li>
+                        <li>Use a ceramic coffee mug instead of paper cups.</li>
+                        <li>Reuse grocery bags or bring your own cloth bags to the store. Do not take a bag from the store unless you need one.</li>
+                     </ul>
+                     <div class="link-to-reuse sinkin">
+                        <a class="three-r-nav text-left hidden-sm-down" title="reduce"><span class="right-arrow">&#60;</span> REDUCE</a>
+                        <a class="three-r-nav text-left hidden-md-up" title="reduceMobile"><span class="right-arrow">&#60;</span> REDUCE</a>
+                        <a class="three-r-nav text-right hidden-sm-down" title="recycle">RECYCLE <span class="right-arrow">&#62;</span></a>
+                        <a class="three-r-nav text-right hidden-md-up" title="recycleMobile">RECYCLE <span class="right-arrow">&#62;</span></a>
+                    </div>                        
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
@@ -98,14 +152,15 @@
                     <div class="txt-hld sinkin">
                         WHERE TO RECYCLE?
                     </div>
-                    <div class="chev-hld">
-                        <!--<img src="img/chevron.png" alt="Chevron">-->
-                    </div>
+                    <a class="hidden-sm-down" data-toggle="collapse" href="#collapseRecycle" aria-expanded="false" aria-controls="collapseRecycle">
+                        <div class="chev-hld recycle"></div>
+                    </a>
+                    <a class="hidden-md-up" data-toggle="collapse" href="#collapseRecycleMobile" aria-expanded="false" aria-controls="collapseRecycleMobile">
+                        <div class="chev-hld recycleMobile"></div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="collapse collapse-box" id="collapseReduce">
+            <div class="collapse collapse-box" id="collapseRecycleMobile">
                 <div class="card card-block">
                     <div class="sinkin collapse-title">
                         The best way to manage waste is to not produce it.  Shopping carefully and being aware of a few guidelines can do this:
@@ -122,6 +177,92 @@
                         <li>Use cloth napkins instead of paper napkins.</li>
                         <li>Use a dishcloth instead of paper towels.</li>
                     </ul>
+                    <div class="sinkin collapse-title">
+                        Check places to 
+                        <a href="">Donate</a>,
+                        <a href="">Sell Used Items</a> or 
+                        <a href="">Exchange Items</a> 
+                        with locals in your area.
+                    </div>
+                    <div class="text-left link-to-reuse sinkin">
+                        <a class="three-r-nav hidden-sm-down" title="reuse"><span class="right-arrow">&#60;</span> REUSE</a>
+                        <a class="three-r-nav hidden-md-up" title="reuseMobile"><span class="right-arrow">&#60;</span> REUSE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--COLLAPSABL BOXES CONTENT-->
+        <div class="row">
+            <div class="collapse collapse-box " id="collapseReduce">
+                <div class="card card-block">
+                    <div class="sinkin collapse-title">
+                        The best way to manage waste is to not produce it.  Shopping carefully and being aware of a few guidelines can do this:
+                    </div>
+                    <ul class="lato">
+                        <li>Buy products in bulk. Larger, economy-size products or ones in concentrated form use less packaging and usually cost less per ounce.</li>
+                        <li>Avoid over-packaged goods, especially ones packed with several materials such as foil, paper, and plastic. They are difficult to recycle, plus you pay more for the package.</li>
+                        <li>Avoid disposable goods, such as paper plates, cups, napkins, razors, and lighters.</li>
+                        <li>Throwaways contribute to the problem, and cost more because they must be replaced again and again.</li>
+                        <li>Buy durable goods - ones that are well built or that carry good warranties. They will last longer, save money in the long run and save and fill space.</li>
+                        <li>At work, make two-sided copies when ever possible.</li>
+                        <li>Maintain central files rather than using several files for individuals.</li>
+                        <li>Use electronic mail or main bulletin board.</li>
+                        <li>Use cloth napkins instead of paper napkins.</li>
+                        <li>Use a dishcloth instead of paper towels.</li>
+                    </ul>
+                    <div class="text-right link-to-reuse sinkin">
+                        <a class="three-r-nav" title="reuse" data-toggle="collapse" href="#collapseReuse" aria-expanded="false" aria-controls="collapseReuse">
+                            REUSE <span class="right-arrow">&#62;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse collapse-box" id="collapseReuse">
+                <div class="card card-block">
+                    <div class="sinkin collapse-title">
+                        It makes economic and environmental sense to reuse products. Sometimes it takes creativity:
+                    </div>
+                    <ul class="lato">
+                        <li>Reuse products for the same purpose. Save paper and plastic bags, and repair broken appliances, furniture and toys.</li>
+                        <li>Reuse products in different ways. Use a coffee can to pack a lunch; use plastic microwave dinner trays as picnic dishes.</li>
+                        <li>Sell old clothes, appliances, toys, and furniture in garage sales or ads, or donate them to charities.</li>
+                        <li>Use resalable containers rather than plastic wrap.</li>
+                        <li>Use a ceramic coffee mug instead of paper cups.</li>
+                        <li>Reuse grocery bags or bring your own cloth bags to the store. Do not take a bag from the store unless you need one.</li>
+                     </ul>
+                     <div class="link-to-reuse sinkin">
+                        <a class="three-r-nav text-left" title="reduce" data-toggle="collapse" href="#collapseReduce" aria-expanded="false" aria-controls="collapseReduce"><span class="right-arrow">&#60;</span> REDUCE</a>
+                        <a class="three-r-nav text-right" title="recycle" data-toggle="collapse" href="#collapseRecycle" aria-expanded="false" aria-controls="collapseRecycle">RECYCLE <span class="right-arrow">&#62;</span></a>
+                    </div>                        
+                </div>
+            </div>
+            <div class="collapse collapse-box" id="collapseRecycle">
+                <div class="card card-block">
+                    <div class="sinkin collapse-title">
+                        The best way to manage waste is to not produce it.  Shopping carefully and being aware of a few guidelines can do this:
+                    </div>
+                    <ul class="lato">
+                        <li>Buy products in bulk. Larger, economy-size products or ones in concentrated form use less packaging and usually cost less per ounce.</li>
+                        <li>Avoid over-packaged goods, especially ones packed with several materials such as foil, paper, and plastic. They are difficult to recycle, plus you pay more for the package.</li>
+                        <li>Avoid disposable goods, such as paper plates, cups, napkins, razors, and lighters.</li>
+                        <li>Throwaways contribute to the problem, and cost more because they must be replaced again and again.</li>
+                        <li>Buy durable goods - ones that are well built or that carry good warranties. They will last longer, save money in the long run and save and fill space.</li>
+                        <li>At work, make two-sided copies when ever possible.</li>
+                        <li>Maintain central files rather than using several files for individuals.</li>
+                        <li>Use electronic mail or main bulletin board.</li>
+                        <li>Use cloth napkins instead of paper napkins.</li>
+                        <li>Use a dishcloth instead of paper towels.</li>
+                    </ul>
+                    <div class="sinkin collapse-title">
+                        Check places to 
+                        <a href="">Donate</a>,
+                        <a href="">Sell Used Items</a> or 
+                        <a href="">Exchange Items</a> 
+                        with locals in your area.
+                    </div>
+                    <div class="text-left link-to-reuse sinkin">
+                        <a class="three-r-nav" title="reuse" data-toggle="collapse" href="#collapseReuse" aria-expanded="false" aria-controls="collapseReuse"><span class="right-arrow">&#60;</span> REUSE</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,13 +270,13 @@
     <!-- MOBILE APP COMING SOON -->
     <div class="container-fluid">
         <div class="row app-coming-soon text-center sinkin">
-            <div class="col-5 left-txt">
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 left-txt">
                 MOBILE APP
             </div>
-            <div class="col-2 center-img">
+            <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 center-img">
                 <img src="img/img-phone.png" alt="Mobile Phone Icon">
             </div>
-            <div class="col-5 right-txt">
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 right-txt">
                 COMING SOON
             </div>
         </div>
@@ -144,7 +285,7 @@
     <div class="container">
     </div>
     <!-- jQuery, Tether, Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>

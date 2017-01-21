@@ -75,9 +75,16 @@ a, a:visited, a:link, a:active{
 }
 .collapse-box{
     margin-top: 2rem;
+    width: 100%;
+}
+.collapse-box a{
+    color: #12A18B;
 }
 .collapse-title{
     margin-bottom: 1rem;
+}
+.three-r-nav.text-right{
+    float: right;
 }
 /*MOBILE APP COMING SOON*/
 .app-coming-soon{
@@ -99,4 +106,58 @@ a, a:visited, a:link, a:active{
 }
 .app-coming-soon .right-txt{
     text-align: left;
+}
+/*RESPONSIVENESS*/
+@-ms-viewport{
+  width: device-width;
+}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { 
+    .navbar .nav-link{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .app-coming-soon .left-txt, .app-coming-soon .right-txt{
+        text-align: center;
+    }
+    .app-coming-soon .left-txt,
+    .app-coming-soon .right-txt,
+    .app-coming-soon .center-img{
+        line-height: 100px;
+    }
+    .navbar{
+        margin-bottom: 10rem;
+    }
+    .three-icons .info-hld{
+        text-align: center;
+    }
+    .chev-hld, .chev-hld:hover, .chev-hld.active{
+        margin-bottom: 2rem;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
+    .navbar .nav-link{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+    .three-icons .info-hld{
+        height: 240px;
+        text-align: left;
+    }
+    .info-arrow .txt-hld{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+}
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
 }
