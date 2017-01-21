@@ -19,6 +19,8 @@ nav.bg-faded{
 }
 .navbar{
     margin-bottom: 3rem;
+    background: white;
+    height: 190px;
 }
 a, a:visited, a:link, a:active{
     color: black;
@@ -41,7 +43,7 @@ a, a:visited, a:link, a:active{
 }
 /*3 ICON SECTION*/
 #threeR{
-    margin-top: 320px;
+    margin-top: 250px;
 }
 .three-icons .intro{
     margin-bottom: 1rem;
