@@ -10,27 +10,27 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light bg-faded">
+        <div class="navbar-center navbar-brand" href="#">
+            <a class="navbar-brand">
+                <img src="img/wnm-logo.png" alt="WasteNoMore Logo">
+            </a>
+        </div>
+        <!-- NAV LINKS -->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link sinkin" href="#aboutSection">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link sinkin" href="#">THREE R'S</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link sinkin" href="#contactSection">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
     <div class="container">
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-light bg-faded">
-            <div class="navbar-center navbar-brand" href="#">
-                <a class="navbar-brand">
-                    <img src="img/wnm-logo.png" alt="WasteNoMore Logo">
-                </a>
-            </div>
-            <!-- NAV LINKS -->
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link sinkin" href="#">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sinkin" href="#">THREE R'S</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link sinkin" href="#">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
         <!-- FIRST SECTION - 3 ICONS -->
         <div class="row three-icons text-center">
             <div class="col-12 intro sinkin">
@@ -270,20 +270,61 @@
     <!-- MOBILE APP COMING SOON -->
     <div class="container-fluid">
         <div class="row app-coming-soon text-center sinkin">
-            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 left-txt">
+            <div class="col-md-12 col-lg-5 col-sm-12 col-xs-12 left-txt">
                 MOBILE APP
             </div>
-            <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12 center-img">
+            <div class="col-md-12 col-lg-2 col-sm-12 col-xs-12 center-img">
                 <img src="img/img-phone.png" alt="Mobile Phone Icon">
             </div>
-            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 right-txt">
+            <div class="col-md-12 col-lg-5 col-sm-12 col-xs-12 right-txt">
                 COMING SOON
             </div>
         </div>
     </div>
     <!-- ABOUT SECTION -->
-    <div class="container">
+    <div class="container about-section" id="aboutSection">
+        <div class="row">
+            <!--<div class="col-12 about-icon text-center">
+                <div class="img-hld">
+                    <img src="img/ic-reduce.png" alt="Reduce Icon">
+                </div>
+            </div>-->
+            <div class="col-12 about-title sinkin text-center">
+                <h2>ABOUT</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 about-copy lato">
+                <span class="sinkin">MISSION:</span> The mission of Waste No More is to bridge the gap between City Government, 
+                Green Social Enterprises and consumers to achieve three goals regarding municipal waste: to educate, 
+                empower and equip New Yorkers with the skills and resources to improve their sustainable waste management practices, 
+                to promote the expansion of sustainable waste practices and to achieve meaningful results in decreasing the amount of 
+                garbage produced and to increase diversion rates.
+            </div>
+            <div class="col-12 about-copy lato">
+                <span class="sinkin">VISION:</span> Waste No More is the change agent that connects consumers with programs and partners 
+                to reduce the amount of waste we produce in NYC. Waste No More believes that through: <span class="sinkin"><span class="wn-green">W</span>atching</span> what we throw away, 
+                <span class="sinkin"><span class="wn-green">A</span>uditing</span> and analyzing what was disposed, creating <span class="sinkin"><span class="wn-green">S</span>ustainable</span> best practices, <span class="sinkin"><span class="wn-green">T</span>eaching</span>
+                others and <span class="sinkin"><span class="wn-green">E</span>mpowering</span> all New Yorkers to practice reducing, reusing and recycling practices. New York City can meet their goals and become a leader in sustainable solid waste management.
+            </div>
+        </div>
     </div>
+    <!-- CONTACT US SECTION -->
+    <div class="container-fluid" id="contactSection">
+        <div class="row contact-section text-center">
+            <div class="col-12 contact-title sinkin text-center">
+                <h2>CONTACT US</h2>
+            </div>
+            <div class="col-12 contact-copy lato text-center">
+                We want to hear from you! Please <a href="mailto:info@WasteNoMore.us">contact us</a> and we’ll respond as quickly as possible.
+            </div>
+            <div class="col-12 copyright lato text-center">
+                Waste No More &#169; 2017
+            </div>
+        </div>
+    </div>
+    <!--BACK TO TOP -->
+    <a href="#0" class="cd-top">Top</a>
     <!-- jQuery, Tether, Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

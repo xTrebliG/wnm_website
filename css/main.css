@@ -78,7 +78,7 @@ a, a:visited, a:link, a:active{
     width: 100%;
 }
 .collapse-box a{
-    color: #12A18B;
+    color: #12A18B !important;
 }
 .collapse-title{
     margin-bottom: 1rem;
@@ -90,11 +90,15 @@ a, a:visited, a:link, a:active{
 .app-coming-soon{
     background: #12A18B;
     margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 2rem 0;
 }
 .app-coming-soon .left-txt,
 .app-coming-soon .right-txt{
     color: white;
     font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .app-coming-soon .left-txt,
 .app-coming-soon .right-txt,
@@ -107,12 +111,120 @@ a, a:visited, a:link, a:active{
 .app-coming-soon .right-txt{
     text-align: left;
 }
+/*ABOUT SECTION*/
+.about-section .img-hld{
+    margin-bottom: 1rem;
+}
+.about-section .about-copy{
+    margin-top: 3rem;
+}
+/*CONTACT SECTION*/
+.contact-section{
+    background: #12A18B;
+    margin-top: 6rem;
+    padding: 6rem 0;
+    color: white;
+}
+.contact-section a:link,
+.contact-section a{
+    text-decoration: underline;
+    color: white;
+}
+.contact-section .copyright{
+    position: absolute;
+    bottom: 0;
+}
+/*BACK TO TOP*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #12A18B url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  border: 2px solid white;
+  border-radius: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
 /*RESPONSIVENESS*/
 @-ms-viewport{
   width: device-width;
 }
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) { 
+    .navbar .nav-link{
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 14px;
+    }
+    .app-coming-soon .left-txt,
+    .app-coming-soon .right-txt,
+    .app-coming-soon .center-img{
+        line-height: 100px;
+        text-align: center;
+    }
+    .navbar{
+        margin-bottom: 10rem;
+    }
+    .three-icons .info-hld{
+        text-align: center;
+    }
+    .chev-hld, .chev-hld:hover, .chev-hld.active{
+        margin-bottom: 2rem;
+    }
+    #collapseReduceMobile,
+    #collapseReuseMobile,
+    #collapseRecycleMobile{
+        margin-bottom: 3rem;
+    }
+    .app-coming-soon .right-txt{
+        left: -3px;
+    }
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) { 
     .navbar .nav-link{
         white-space: nowrap;
         overflow: hidden;
@@ -124,6 +236,7 @@ a, a:visited, a:link, a:active{
     .app-coming-soon .right-txt,
     .app-coming-soon .center-img{
         line-height: 100px;
+        text-align: center;
     }
     .navbar{
         margin-bottom: 10rem;
@@ -134,12 +247,10 @@ a, a:visited, a:link, a:active{
     .chev-hld, .chev-hld:hover, .chev-hld.active{
         margin-bottom: 2rem;
     }
-}
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767px) { 
-    .navbar .nav-link{
-        white-space: nowrap;
-        overflow: hidden;
+    #collapseReduceMobile,
+    #collapseReuseMobile,
+    #collapseRecycleMobile{
+        margin-bottom: 3rem;
     }
 }
 /*Medium devices (tablets, 768px and up)*/
@@ -147,6 +258,12 @@ a, a:visited, a:link, a:active{
     .three-icons .info-hld{
         height: 240px;
         text-align: left;
+    }
+    .app-coming-soon .left-txt,
+    .app-coming-soon .right-txt,
+    .app-coming-soon .center-img{
+        line-height: 100px;
+        text-align: center;
     }
     .info-arrow .txt-hld{
         white-space: nowrap;
