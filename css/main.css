@@ -40,6 +40,9 @@ a, a:visited, a:link, a:active{
     height:100%;
 }
 /*3 ICON SECTION*/
+#threeR{
+    margin-top: 320px;
+}
 .three-icons .intro{
     margin-bottom: 1rem;
     text-transform: uppercase;

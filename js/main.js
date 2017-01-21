@@ -1,8 +1,8 @@
 $(function() {
-    $(document).on('touch click', 'a', function(event){
+    $(document).on('touch click', '.navbar a', function(event){
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - 20
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 250
         }, 500);
     });
 	var offset = 300,
@@ -34,7 +34,7 @@ $(function() {
         setTimeout( function(){
             var offsetChev = thisItem.offset();
             offsetChev.left -= 20;
-            offsetChev.top += 70;
+            offsetChev.top -= 250;
             $('html, body').animate({
                 scrollTop: offsetChev.top,
                 scrollLeft: offsetChev.left
