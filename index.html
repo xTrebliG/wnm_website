@@ -12,8 +12,8 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-faded">
-        <div class="navbar-center navbar-brand" href="#">
-            <a class="navbar-brand">
+        <div class="navbar-center navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="img/wnm-logo.png" alt="WasteNoMore Logo">
             </a>
         </div>
@@ -23,14 +23,14 @@
                 <a class="nav-link sinkin" href="#aboutSection">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link sinkin" href="#">THREE R'S</a>
+                <a class="nav-link sinkin" href="#threeR">THREE R'S</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link sinkin" href="#contactSection">CONTACT</a>
             </li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container" id="threeR">
         <!-- FIRST SECTION - 3 ICONS -->
         <div class="row three-icons text-center">
             <div class="col-12 intro sinkin">
@@ -255,9 +255,9 @@
                     </ul>
                     <div class="sinkin collapse-title">
                         Check places to 
-                        <a href="">Donate</a>,
-                        <a href="">Sell Used Items</a> or 
-                        <a href="">Exchange Items</a> 
+                        <a href="" target="_blank">Donate</a>,
+                        <a href="" target="_blank">Sell Used Items</a> or 
+                        <a href="" target="_blank">Exchange Items</a> 
                         with locals in your area.
                     </div>
                     <div class="text-left link-to-reuse sinkin">
@@ -325,7 +325,9 @@
     </div>
     <!--BACK TO TOP -->
     <div class="container-fluid">
-        <a href="#0" class="cd-top">Top</a>
+        <div class="col-12">
+            <a href="#0" class="cd-top">Top</a>
+        </div>
     </div>
     <!-- jQuery, Tether, Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>

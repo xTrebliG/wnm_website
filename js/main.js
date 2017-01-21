@@ -1,4 +1,10 @@
 $(function() {
+    $(document).on('touch click', 'a', function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 20
+        }, 500);
+    });
 	var offset = 300,
 		offset_opacity = 1200,
 		scroll_top_duration = 700,

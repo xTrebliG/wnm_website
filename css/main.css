@@ -133,6 +133,7 @@ a, a:visited, a:link, a:active{
 .contact-section .copyright{
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 /*BACK TO TOP*/
 .cd-top {
