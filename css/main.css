@@ -21,8 +21,8 @@ nav.bg-faded{
     margin-bottom: 3rem;
     background: white;
     height: 190px;
-    -webkit-transition: height 500ms; /* Safari */
-    transition: height 500ms;
+    -webkit-transition: height 400ms; /* Safari */
+    transition: height 400ms;
 }
 a, a:visited, a:link, a:active{
     color: black;
@@ -48,11 +48,15 @@ a, a:visited, a:link, a:active{
     height: 35px;
     top: 0;
     left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 400ms; /* Safari */
+    transition: opacity 400ms;
 }
 .second-nav-links{
     position: absolute;
     right: 0;
     top: 0;
+    
 }
 .inactive-brand{
     display: none;
@@ -62,17 +66,23 @@ a, a:visited, a:link, a:active{
 }
 /*3 ICON SECTION*/
 #threeR{
-    margin-top: 4rem;  
+    margin-top: 3rem;  
 }
 #threeR .about-title{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .three-icons .intro{
     margin-bottom: 1rem;
     text-transform: uppercase;
+    text-align: justify !important;
 }
 .three-icons .intro-txt{
     margin-bottom: 3rem;
+    text-align: justify !important;
+}
+.reduce-padding{
+    margin-bottom: 1rem !important;
+    margin-top: -2rem !important;
 }
 .three-icons .img-hld{
     margin-bottom: 1rem;
