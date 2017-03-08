@@ -21,6 +21,8 @@ nav.bg-faded{
     margin-bottom: 3rem;
     background: white;
     height: 190px;
+    -webkit-transition: height 500ms; /* Safari */
+    transition: height 500ms;
 }
 a, a:visited, a:link, a:active{
     color: black;
@@ -41,9 +43,29 @@ a, a:visited, a:link, a:active{
     margin: auto;
     height:100%;
 }
+.secondary-brand img{
+    position: absolute;
+    height: 35px;
+    top: 0;
+    left: 0;
+}
+.second-nav-links{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.inactive-brand{
+    display: none;
+}
+.shrink{
+    height: 50px !important    
+}
 /*3 ICON SECTION*/
 #threeR{
-    margin-top: 250px;
+    margin-top: 4rem;  
+}
+#threeR .about-title{
+    margin-bottom: 4rem;
 }
 .three-icons .intro{
     margin-bottom: 1rem;
@@ -57,7 +79,7 @@ a, a:visited, a:link, a:active{
 }
 .three-icons .info-hld{
     height: 150px;
-    text-align: left;
+    text-align: justify;
 }
 .wn-green{
     color: #12A18B;
@@ -117,6 +139,9 @@ a, a:visited, a:link, a:active{
     text-align: left;
 }
 /*ABOUT SECTION*/
+#aboutSection{
+    margin-top: 250px;
+}
 .about-section .img-hld{
     margin-bottom: 1rem;
 }
@@ -129,6 +154,10 @@ a, a:visited, a:link, a:active{
     margin-top: 6rem;
     padding: 6rem 0;
     color: white;
+}
+.contact-copy{
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .contact-section a:link,
 .contact-section a{
