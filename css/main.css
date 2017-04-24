@@ -350,9 +350,13 @@ a, a:visited, a:link, a:active{
 }
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) { 
-
+    .contact-copy{
+        padding: 0 10rem;
+    }
 }
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
+    .contact-copy{
+        padding: 0 12rem;
+    }
 }
