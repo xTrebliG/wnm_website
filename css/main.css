@@ -4,11 +4,18 @@
     src: url(../fonts/lato/Lato-Regular.ttf);
 }
 @font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/lato/Lato-Light.ttf);
+}
+@font-face {
     font-family: Sinkin;
     src: url(../fonts/sinkin-sans/SinkinSans-600SemiBold.otf);
 }
 .lato{
     font-family: Lato;
+}
+.lato-light{
+    font-family: Lato-light;
 }
 .sinkin{
     font-family: Sinkin;
@@ -26,13 +33,18 @@ nav.bg-faded{
 }
 a, a:visited, a:link, a:active{
     color: black;
+    font-size: 1rem;
 }
 .navbar a:hover{
     color: #12A18B;
+    font-size: 1rem;
 }
 .navbar-brand {
   float: none;
   margin-right: 0;
+}
+.navbar-brand img{
+  width: 60%;
 }
 .navbar-center{
     position: relative;
@@ -46,6 +58,7 @@ a, a:visited, a:link, a:active{
 .secondary-brand img{
     position: absolute;
     height: 35px;
+    width: 40px;
     top: 0;
     left: 0;
     opacity: 1;
@@ -70,13 +83,18 @@ a, a:visited, a:link, a:active{
 }
 #threeR .about-title{
     margin-bottom: 3rem;
+    color: lightgray;
+    padding-left: 0;
 }
 .three-icons .intro{
     margin-bottom: 1rem;
     text-transform: uppercase;
-    text-align: justify !important;
+    text-align: center !important;
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
 .three-icons .intro-txt{
+    margin-top: 1rem;
     margin-bottom: 3rem;
     text-align: justify !important;
 }
@@ -152,6 +170,14 @@ a, a:visited, a:link, a:active{
 #aboutSection{
     margin-top: 250px;
 }
+.about-section .about-title{
+    color: lightgray;
+}
+.about-section .title-color{
+    color: #12A18B;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 .about-section .img-hld{
     margin-bottom: 1rem;
 }
@@ -162,7 +188,7 @@ a, a:visited, a:link, a:active{
 .contact-section{
     background: #12A18B;
     margin-top: 6rem;
-    padding: 6rem 0;
+    padding: 2rem 0 5rem 0;
     color: white;
 }
 .contact-copy{
@@ -178,6 +204,7 @@ a, a:visited, a:link, a:active{
     position: absolute;
     bottom: 0;
     right: 0;
+    margin-bottom: 1rem;
 }
 /*BACK TO TOP*/
 .cd-top {
@@ -267,6 +294,9 @@ a, a:visited, a:link, a:active{
     .app-coming-soon .right-txt{
         left: -3px;
     }
+    .contact-copy{
+        padding: 0 1rem;
+    }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) { 
@@ -296,6 +326,9 @@ a, a:visited, a:link, a:active{
     #collapseReuseMobile,
     #collapseRecycleMobile{
         margin-bottom: 3rem;
+    }
+    .contact-copy{
+        padding: 0 1rem;
     }
 }
 /*Medium devices (tablets, 768px and up)*/
