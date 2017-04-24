@@ -1,18 +1,11 @@
 /*FONTS*/
 @font-face {
-    font-family: Lato;
-    src: url(../fonts/lato/Lato-Regular.ttf);
-}
-@font-face {
     font-family: Lato-Light;
     src: url(../fonts/lato/Lato-Light.ttf);
 }
 @font-face {
     font-family: Sinkin;
     src: url(../fonts/sinkin-sans/SinkinSans-600SemiBold.otf);
-}
-.lato{
-    font-family: Lato;
 }
 .lato-light{
     font-family: Lato-light;
